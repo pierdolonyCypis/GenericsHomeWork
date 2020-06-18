@@ -4,13 +4,13 @@ import java.util.List;
 public class Generics {
 
     public static void main(String[] args) {
-        List<Integer> newList = new ArrayList<>();
+        List<Integer> myList = new ArrayList<>();
         try {
-            newList.add(Integer.valueOf("125")); // це можливо за умови що не буде містити будь-яких інших симолів крім чисел
+            myList.add(Integer.valueOf("125"));
         } catch (NumberFormatException e) {
             System.err.println("Ви ввели НЕ число!");
         }
-        for (Integer list : newList) {
+        for (Integer list : myList) {
             System.out.println(list);
         }
     }
